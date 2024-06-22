@@ -19,7 +19,7 @@ app.post('/chat', async (req: Request, res: Response) => {
 
   try {
     const response = await openai.completions.create({
-      model: 'text-davinci-003',
+      model: 'babbage-002',
       prompt: message,
       max_tokens: 150,
       n: 1,
