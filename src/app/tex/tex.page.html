@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-toolbar>
+        <div class="chat-header">
+            <ion-avatar slot="start">
+                <img src="./assets/images/tex.jpg" alt="Silhouette of Tex's head" />
+            </ion-avatar>
+            <div class="chat-header-info">
+                <h2>Tex</h2>
+                <p>Online</p>
+            </div>
+        </div>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+    <div class="messages">
+        <div *ngFor="let message of messages" [ngClass]="{'message': true, 'received': message.type === 'received', 'sent': message.type === 'sent'}">
+            <p>{{ message.text }}</p>
+            <span class="time">{{ message.time }}</span>
+        </div>
+    </div>
 </ion-content>
+
+<ion-footer>
+    <div class="message-input">
+        <ion-input [(ngModel)]="messageToSend" placeholder="Fale com a Tex"></ion-input>
+        <ion-button (click)="sendMessage()">
+            <ion-icon slot="icon-only" name="send"></ion-icon>
+        </ion-button>
+    </div>
+</ion-footer>
