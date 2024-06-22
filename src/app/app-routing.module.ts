@@ -7,14 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
     path: 'tex',
-    redirectTo: 'tex',
-    pathMatch: 'full'
+    loadChildren: () => import('./tex/tex.module').then( m => m.TexPageModule)
   },
 ];
 
