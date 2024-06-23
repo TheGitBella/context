@@ -1,0 +1,45 @@
+ion-content {
+  --background: #13907E;
+}
+
+ion-header {
+  --background: #13907E;
+}
+
+ion-toolbar {
+  --background: #13907E;
+}
+
+.chat-header, .chat-header-expanded {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #173B5D;
+  color: #FDF9F6;
+
+  img {
+    width: 20vw;
+  }
+
+  ion-avatar {
+    margin-right: 10px;
+  }
+
+  .chat-header-info {
+    h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #FDF9F6;
+    }
+  }
+}
+
+.chat-header-expanded {
+  height: 200px;
+  border-radius: 0 0 60px 60px;
+}

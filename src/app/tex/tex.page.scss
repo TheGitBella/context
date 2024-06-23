@@ -1,3 +1,7 @@
+ion-content {
+  --background: #13907E;
+}
+
 .chat-header {
   display: flex;
   align-items: center;
@@ -59,6 +63,7 @@
 
 .message-input {
   display: flex;
+  background-color: #173B5D;
   padding: 10px;
 
   ion-input {
@@ -66,6 +71,15 @@
     margin-right: 10px;
     background-color: #FDF9F6;
     color: #173B5D;
-    border-radius: 10px;
+    border-radius: 15px;
+  }
+
+  .send-btn {
+    --background: #13907E;
+    --border-radius: 50%;
+
+    ion-icon {
+      color: #FDF9F6;
+    }
   }
 }

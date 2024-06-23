@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-dashboard',
+  templateUrl: 'dashboard.page.html',
+  styleUrls: ['dashboard.page.scss'],
 })
-export class HomePage {
+export class DashboardPage {
 
   constructor(
       private router: Router
   ) {}
 
-  onLoginButtonClick() {
-    this.router.navigate(['/login'])
+  onFirstButtonClick() {
+    this.router.navigate(['/tex'])
         .then(nav => {
           return;
         }, err => {
           console.error(err);
         });
   }
-    onRegisterButtonClick() {
-    this.router.navigate(['/register'])
+  onSecondButtonClick() {
+    this.router.navigate(['/tex'])
         .then(nav => {
           return;
         }, err => {

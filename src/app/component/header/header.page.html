@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <div [ngClass]="{'chat-header-expanded': isExpanded, 'chat-header': !isExpanded}">
+            <ion-button class="return-btn" (click)="backToLastPage()" *ngIf="hasReturnButton">
+                <ion-icon slot="icon-only" name="return"></ion-icon>
+            </ion-button>
+            <div *ngIf="hasAvatar">
+                <ion-avatar slot="start">
+                    <img src="./assets/images/tex.jpg" alt="Silhouette of Tex's head" />
+                </ion-avatar>
+                <div class="chat-header-info">
+                    <h2>Tex</h2>
+                    <p>Online</p>
+                </div>
+            </div>
+            <ion-button class="return-btn" (click)="backToLastPage()" *ngIf="hasMenuButton">
+                <ion-icon slot="icon-only" name="return"></ion-icon>
+            </ion-button>
+            <img src="./assets/images/logo.png" alt="Logo" />
+        </div>
+    </ion-toolbar>
+</ion-header>

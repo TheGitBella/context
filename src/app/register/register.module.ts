@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
+import { RegisterPage } from './register.page';
+
+import { RegisterPageRoutingModule } from './register-routing.module';
+import {HeaderPageModule} from "../component/header/header.module";
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RegisterPageRoutingModule,
+    HeaderPageModule
+  ],
+  declarations: [RegisterPage]
+})
+export class RegisterPageModule {}
