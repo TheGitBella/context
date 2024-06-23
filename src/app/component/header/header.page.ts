@@ -21,7 +21,7 @@ export class HeaderPage {
     }
 
     toggleMenu() {
-        this.isExpanded = false;
+        this.isExpanded = !this.isExpanded;
         this.isMenuExpanded = !this.isMenuExpanded;
     }
 }
