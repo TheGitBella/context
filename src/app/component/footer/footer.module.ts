@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HeaderPage } from './header.page';
+import { FooterPage } from './footer.page';
 
-import { HeaderPageRoutingModule } from './header-routing.module';
+import { FooterPageRoutingModule } from './footer-routing.module';
 import { MenuPageModule } from "../menu/menu.module";
 
 @NgModule({
@@ -12,12 +12,12 @@ import { MenuPageModule } from "../menu/menu.module";
         CommonModule,
         FormsModule,
         IonicModule,
-        HeaderPageRoutingModule,
+        FooterPageRoutingModule,
         MenuPageModule
     ],
   exports: [
-    HeaderPage
+    FooterPage
   ],
-  declarations: [HeaderPage]
+  declarations: [FooterPage]
 })
-export class HeaderPageModule {}
+export class FooterPageModule {}

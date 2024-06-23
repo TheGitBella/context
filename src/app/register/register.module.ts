@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RegisterPage } from './register.page';
 
 import { RegisterPageRoutingModule } from './register-routing.module';
-import {HeaderPageModule} from "../component/header/header.module";
+import { HeaderPageModule } from "../component/header/header.module";
+import { MenuPageModule } from "../component/menu/menu.module";
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {HeaderPageModule} from "../component/header/header.module";
     FormsModule,
     IonicModule,
     RegisterPageRoutingModule,
-    HeaderPageModule
+    HeaderPageModule,
+    MenuPageModule
   ],
   declarations: [RegisterPage]
 })
