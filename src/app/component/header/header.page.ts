@@ -13,6 +13,7 @@ export class HeaderPage {
     @Input() hasMenuButton: boolean = true;
     @Input() hasLogo: boolean = false;
     isMenuExpanded: boolean = false;
+    isPageExpanded: boolean = false;
 
     constructor(private location: Location) {}
 
@@ -21,7 +22,12 @@ export class HeaderPage {
     }
 
     toggleMenu() {
-        this.isExpanded = !this.isExpanded;
+        if(!this.isMenuExpanded && !this.isExpanded) {
+            this.isPageExpanded = true
+        } if(!this.isPageExpanded) {
+            this.isExpanded = !this.isExpanded;
+        }
+
         this.isMenuExpanded = !this.isMenuExpanded;
     }
 }
