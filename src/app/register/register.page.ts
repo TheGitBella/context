@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -6,10 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['register.page.scss'],
 })
 export class RegisterPage {
+  constructor(private router: Router) {}
 
-  constructor() {}
-
-  onFirstButtonClick() {}
-  onSecondButtonClick() {}
-
+  onHomeButtonClick() {
+    this.router.navigate(['/']).then(
+      (nav) => {
+        return;
+      },
+      (err) => {
+        console.error(err);
+      }
+    );
+  }
 }
