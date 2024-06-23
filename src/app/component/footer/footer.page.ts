@@ -2,18 +2,17 @@ import { Component, Input } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: 'header.page.html',
-    styleUrls: ['header.page.scss'],
+    selector: 'app-footer',
+    templateUrl: 'footer.page.html',
+    styleUrls: ['footer.page.scss'],
 })
-export class HeaderPage {
+export class FooterPage {
     @Input() isExpanded: boolean = false;
     @Input() hasReturnButton: boolean = false;
     @Input() hasAvatar: boolean = false;
-    @Input() hasMenuButton: boolean = true;
+    @Input() hasMenuButton: boolean = false;
     @Input() hasLogo: boolean = false;
     isMenuExpanded: boolean = false;
-    isPageExpanded: boolean = false;
 
     constructor(private location: Location) {}
 
@@ -22,12 +21,6 @@ export class HeaderPage {
     }
 
     toggleMenu() {
-        if(!this.isMenuExpanded && !this.isExpanded) {
-            this.isPageExpanded = true
-        } if(!this.isPageExpanded) {
-            this.isExpanded = !this.isExpanded;
-        }
-
         this.isMenuExpanded = !this.isMenuExpanded;
     }
 }

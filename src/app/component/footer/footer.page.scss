@@ -22,13 +22,6 @@ ion-toolbar {
 .left-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-
-  .avatar-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
   ion-avatar {
     margin-right: 10px;
@@ -58,7 +51,6 @@ ion-toolbar {
 }
 
 .chat-header-expanded {
-  align-items: flex-start;
   height: 200px;
   border-radius: 0 0 60px 60px;
   --box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
