@@ -11,14 +11,11 @@ export class HeaderPage {
     @Input() hasAvatar: boolean = false;
     @Input() hasMenuButton: boolean = true;
     @Input() hasLogo: boolean = false;
-    isMenuExpanded: boolean = false;
-    isPageExpanded: boolean = false;
+    @Input() isMenuExpanded: boolean = false;
 
     constructor(private location: Location) {}
 
-    ngOnInit() {
-        this.isMenuExpanded = false;
-    }
+    ngOnInit() {}
 
     backToLastPage() {
         this.location.back();
