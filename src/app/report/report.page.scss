@@ -1,0 +1,73 @@
+ion-content {
+  --background: #13907e;
+
+  #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #173b5d;
+    border-radius: 5px;
+    height: 50px;
+    margin: 16px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0px;
+    }
+  }
+
+  #mood-weekly {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  #reports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .report {
+      background: #ffffff;
+      border-radius: 20px;
+      flex: 1 1 calc(50% - 16px);
+      max-width: calc(50% - 16px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1,
+    h2 {
+      color: #173b5d;
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #graph {
+    display: flex;
+    justify-content: center;
+    background: #173b5d;
+    margin: 16px;
+    border-radius: 5px;
+  }
+}

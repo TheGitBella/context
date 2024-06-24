@@ -31,6 +31,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./mood/mood.module').then((m) => m.MoodPageModule),
   },
+  {
+    path: 'report',
+    loadChildren: () =>
+      import('./report/report.module').then((m) => m.ReportPageModule),
+  },
 ];
 
 @NgModule({
