@@ -4,6 +4,9 @@
 
 Mind Healthcare: Context é um aplicativo desenvolvido para fornecer suporte de saúde mental aos usuários. O projeto foi criado durante o Hackathon 4.0 e combina tecnologias modernas para entregar uma experiência intuitiva e útil. O aplicativo utiliza Angular e Ionic para o front-end e Node.js com TypeScript para o back-end. Além disso, integra a API da OpenAI para criar a assistente de inteligência artificial chamada TEX, oferecendo um suporte personalizado e inteligente.
 
+[![Assista ao vídeo](https://drive.google.com/file/d/1t87dCpjejjgw_7Z4DfcB3uVk0xZ7B_XX/view?usp=sharing)
+
+
 ## Tecnologias Utilizadas
 
 - **Front-end**: Angular, Ionic
