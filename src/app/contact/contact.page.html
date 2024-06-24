@@ -1,0 +1,41 @@
+<app-header [hasReturnButton]="true" [hasAvatar]="false" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+  <div id="title">
+    <h1>Contatos de Emergência</h1>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Carlos Amarantes</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Psicólogo
+    </ion-card-content>
+
+    <div class="icons">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <ion-icon name="call-outline"></ion-icon>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>José Carlos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Irmão
+    </ion-card-content>
+
+    <div class="icons">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <ion-icon name="call-outline"></ion-icon>
+    </div>
+  </ion-card>
+
+  <div id="button">
+    <ion-button expand="block" (click)="onNewContactButtonClick()">Novo Contato</ion-button>
+  </div>
+</ion-content>

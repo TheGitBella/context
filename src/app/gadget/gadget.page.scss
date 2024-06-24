@@ -1,0 +1,43 @@
+ion-content {
+  --background: #13907e;
+
+  #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #173b5d;
+    border-radius: 5px;
+    height: 50px;
+    margin: 16px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0px;
+    }
+  }
+
+  ion-card {
+    --background: #ffffff;
+    color: #173b5d;
+
+    ion-card-title {
+      color: #173b5d;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    ion-icon {
+      color: #173b5d;
+      font-size: 24px;
+      margin-left: 5px;
+    }
+  }
+
+  #button {
+    padding: 0px 16px;
+  }
+}
