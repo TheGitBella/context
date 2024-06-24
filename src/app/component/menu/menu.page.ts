@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
 export class MenuPage {
     buttons: { text: string, action: () => void, icon?: string }[] = [
         { text: 'TEX', action: () => this.navigateTo('/tex'), icon: './assets/images/tex.jpg' },
+        { text: 'HOME', action: () => this.navigateTo('/dashboard') },
         { text: 'PERFIL', action: () => this.navigateTo('/profile') },
         { text: 'PAGAMENTO', action: () => this.navigateTo('/payment') },
         { text: 'CADASTRAR NOVO CONTATO', action: () => this.navigateTo('/new-contact') },
