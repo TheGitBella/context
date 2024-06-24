@@ -9,6 +9,15 @@ import { Router } from '@angular/router';
 export class LoginPage {
   constructor(private router: Router) {}
 
+  onLoginButtonClick() {
+    this.router.navigate(['/dashboard'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
+  }
+
   onHomeButtonClick() {
     this.router.navigate(['/']).then(
       (nav) => {
