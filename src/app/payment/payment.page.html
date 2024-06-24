@@ -1,0 +1,38 @@
+<app-header [isMenuExpanded]="false" [hasReturnButton]="true" [hasAvatar]="false" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+  <div id="header">
+    <div id="logo">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <h2>PAGAMENTO</h2>
+        <ion-item>
+          <ion-icon name="person"></ion-icon>
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="card-outline"></ion-icon>
+          <ion-input type="number" placeholder="Nº Cartão"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-input type="date" placeholder="Validade"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="lock-closed"></ion-icon>
+          <ion-input type="number" placeholder="CVV"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block">Salvar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

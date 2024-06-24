@@ -1,0 +1,28 @@
+<ion-header>
+    <div class="header-container chat-header">
+            <div class="left-section">
+                <ion-button class="return-btn" (click)="backToLastPage()" *ngIf="hasReturnButton">
+                    <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+                </ion-button>
+                <div *ngIf="hasAvatar" class="avatar-container">
+                    <ion-avatar>
+                        <img src="./assets/images/tex.jpg" alt="Silhouette of Tex's head" />
+                    </ion-avatar>
+                    <div class="chat-header-info">
+                        <h2>Tex</h2>
+                        <p>Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-section" *ngIf="hasLogo">
+                <img src="./assets/images/logo.png" alt="Logo" />
+            </div>
+            <div class="right-section">
+                <ion-button class="menu-btn" (click)="toggleMenu()" *ngIf="hasMenuButton">
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                </ion-button>
+            </div>
+    </div>
+</ion-header>
+
+<app-menu *ngIf="isMenuExpanded"></app-menu>

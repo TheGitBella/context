@@ -1,0 +1,19 @@
+<app-header [isMenuExpanded]="false"  [hasReturnButton]="true" [hasAvatar]="true" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+    <div class="messages">
+        <div *ngFor="let message of messages" [ngClass]="{'message': true, 'received': message.type === 'received', 'sent': message.type === 'sent'}">
+            <p>{{ message.text }}</p>
+            <span class="time">{{ message.time }}</span>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div class="message-input">
+        <ion-input [(ngModel)]="messageToSend" placeholder="   Fale com a Tex"></ion-input>
+        <ion-button class="send-btn" (click)="sendMessage()">
+            <ion-icon slot="icon-only" name="send"></ion-icon>
+        </ion-button>
+    </div>
+</ion-footer>

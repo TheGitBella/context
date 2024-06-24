@@ -1,0 +1,18 @@
+<app-header [isMenuExpanded]="false" [hasReturnButton]="true" [hasAvatar]="false" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+  <div id="title">
+    <h1>Como está se sentindo hoje?</h1>
+  </div>
+
+  <div id="moods" class="ion-padding">
+    <div class="mood" *ngFor="let mood of moods" [class.selected]="selectedMood === mood" (click)="selectMood(mood)">
+      <img [src]="mood.image" alt="{{ mood.label }}" class="mood-icon">
+      <p>{{ mood.label }}</p>
+    </div>
+  </div>
+
+  <div id="button">
+    <ion-button expand="block">Salvar</ion-button>
+  </div>
+</ion-content>

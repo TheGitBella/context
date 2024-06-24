@@ -1,0 +1,36 @@
+<app-header [isMenuExpanded]="false" [hasReturnButton]="true" [hasAvatar]="false" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+  <div id="header">
+    <div id="logo">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <h2>NOVO CONTATO</h2>
+        <ion-item class="input">
+          <ion-icon name="person"></ion-icon>
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+
+        <ion-item class="input">
+          <ion-icon name="mail"></ion-icon>
+          <ion-input type="text" placeholder="E-mail"></ion-input>
+        </ion-item>
+
+        <ion-item class="input">
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-input type="tell" placeholder="Telefone"></ion-input>
+        </ion-item>
+
+        <ion-checkbox>Profissional de Saúde</ion-checkbox>
+        <ion-checkbox checked="true">Contato de Emergência</ion-checkbox>
+
+        <ion-button expand="block">Salvar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

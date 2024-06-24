@@ -1,0 +1,29 @@
+<app-header [isMenuExpanded]="false" [hasReturnButton]="true" [hasAvatar]="false" [hasMenuButton]="true"></app-header>
+
+<ion-content>
+  <div id="title">
+    <h1>Relatório Semanal</h1>
+  </div>
+
+  <div id="mood-weekly">
+    <img src="./assets/images/mood-weekly.png" alt="mood" class="mood">
+  </div>
+
+  <div id="reports" class="ion-padding">
+    <div class="report">
+      <h2>TEMPERATURA MÉDIA</h2>
+      <h1>36,1ºC</h1>
+    </div>
+
+    <div class="report">
+      <h2>FREQUÊNCIA MÉDIA</h2>
+      <h1>86 bpm</h1>
+    </div>
+  </div>
+
+  <h2>PRESSÃO MÉDIA</h2>
+  <div id="graph">
+    <apx-chart [chart]="options.chart" [series]="options.series" [stroke]="options.stroke" [markers]="options.markers"
+      [grid]="options.grid" [tooltip]="options.tooltip" [colors]="options.colors"></apx-chart>
+  </div>
+</ion-content>

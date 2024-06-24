@@ -1,0 +1,10 @@
+<ion-content class="ion-padding">
+    <div class="container">
+        <div *ngFor="let button of buttons">
+            <ion-button expand="full" (click)="button.action()">
+                <img [src]="button.icon" *ngIf="button.icon" class="button-icon"/>
+                {{ button.text }}
+            </ion-button>
+        </div>
+    </div>
+</ion-content>

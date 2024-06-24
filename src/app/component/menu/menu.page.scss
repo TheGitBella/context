@@ -1,0 +1,26 @@
+ion-content {
+  --background: #FDF9F6;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ion-button {
+  height: 60px;
+  border-bottom: #13907E solid 3px;
+  --background: transparent;
+  --box-shadow: none;
+  --color: #173B5D;
+  font-weight: bolder;
+
+  .button-icon {
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 50%;
+    border: #173B5D solid 3px;
+  }
+}

@@ -1,0 +1,85 @@
+ion-content {
+  --background: #13907E;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #173B5D;
+  color: #FDF9F6;
+
+  ion-avatar {
+    margin-right: 10px;
+  }
+
+  .chat-header-info {
+    h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #FDF9F6;
+    }
+  }
+}
+
+.messages {
+  padding: 10px;
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+
+    &.received {
+      align-self: flex-start;
+      background-color: #FDF9F6;
+      color: #173B5D;
+      margin-right: auto;
+    }
+
+    &.sent {
+      align-self: flex-end;
+      background-color: #FDF9F6;
+      color: #173B5D;
+      margin-left: auto;
+    }
+
+    .time {
+      align-self: flex-end;
+      font-size: 0.8em;
+      color: grey;
+    }
+  }
+}
+
+.message-input {
+  display: flex;
+  background-color: #173B5D;
+  padding: 10px;
+
+  ion-input {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #FDF9F6;
+    color: #173B5D;
+    border-radius: 15px;
+  }
+
+  .send-btn {
+    --background: #13907E;
+    --border-radius: 50%;
+
+    ion-icon {
+      color: #FDF9F6;
+    }
+  }
+}

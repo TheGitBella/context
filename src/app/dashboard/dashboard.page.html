@@ -1,0 +1,26 @@
+<ion-content>
+
+    <div id="dashboard">
+        <app-header [isMenuExpanded]="false" [hasReturnButton]="true" [hasMenuButton]="true"></app-header>
+    </div>
+
+
+
+    <div class="wrapper">
+        <ion-card class="card-wrapper">
+            <ion-card-content>
+                <h2>{{ siteTitle }}</h2>
+            </ion-card-content>
+            <ion-card-content>
+                <p>{{ siteContent }}</p>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div id="btns" class="ion-padding">
+        <div class="btn" *ngFor="let btn of btns">
+            <p>{{ btn.label }}</p>
+        </div>
+    </div>
+
+</ion-content>
