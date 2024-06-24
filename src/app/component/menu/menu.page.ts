@@ -15,8 +15,8 @@ export class MenuPage {
         { text: 'CONTATO', action: () => this.navigateTo('/contact') },
         { text: 'RELATÓRIO', action: () => this.navigateTo('/report') },
         { text: 'REGISTRAR HUMOR', action: () => this.navigateTo('/mood') },
-        { text: 'GADGETS', action: () => this.navigateTo('/gadget') },
-        { text: 'LOGOUT', action: () => this.navigateTo('/logout') },
+        { text: 'GADGETS', action: () => this.navigateTo('/gadgets') },
+        { text: 'LOGOUT', action: () => this.navigateTo('') },
     ];
     constructor(
         private router: Router
