@@ -1,3 +1,20 @@
-<ion-content class="ion-padding">
-DASHBOARD
+<ion-content>
+
+    <div id="dashboard">
+        <app-header [isExpanded]="true" [hasReturnButton]="true" [hasMenuButton]="true"></app-header>
+    </div>
+
+    <div class="wrapper">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>
+                    {{ siteTitle }}
+                </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+                {{ siteContent }}
+            </ion-card-content>
+        </ion-card>
+    </div>
+
 </ion-content>
