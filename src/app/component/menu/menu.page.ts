@@ -16,7 +16,6 @@ export class MenuPage {
         { text: 'RELATÓRIO', action: () => this.navigateTo('/report') },
         { text: 'REGISTRAR HUMOR', action: () => this.navigateTo('/mood') },
         { text: 'GADGETS', action: () => this.navigateTo('/gadget') },
-        { text: 'CONFIGURAÇÃO', action: () => this.navigateTo('/config') },
         { text: 'LOGOUT', action: () => this.navigateTo('/logout') },
     ];
     constructor(
