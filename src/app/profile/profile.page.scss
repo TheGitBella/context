@@ -1,0 +1,19 @@
+ion-content {
+  --background: #13907e;
+
+  .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    right: 4%;
+
+    .form-wrapper {
+      box-shadow: none;
+      border-radius: 20px;
+      padding: 15px 10px;
+      background: #ffffff;
+    }
+  }
+
+}
+
