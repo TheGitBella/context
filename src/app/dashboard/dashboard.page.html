@@ -4,15 +4,15 @@
         <app-header [hasReturnButton]="true" [hasMenuButton]="true"></app-header>
     </div>
 
+
+
     <div class="wrapper">
-        <ion-card>
-            <ion-card-header>
-                <ion-card-subtitle>
-                    {{ siteTitle }}
-                </ion-card-subtitle>
-            </ion-card-header>
+        <ion-card class="card-wrapper">
             <ion-card-content>
-                {{ siteContent }}
+                <h2>{{ siteTitle }}</h2>
+            </ion-card-content>
+            <ion-card-content>
+                <p>{{ siteContent }}</p>
             </ion-card-content>
         </ion-card>
     </div>
