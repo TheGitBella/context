@@ -46,6 +46,18 @@ const routes: Routes = [
     loadChildren: () =>
       import('./report/report.module').then((m) => m.ReportPageModule),
   },
+  {
+    path: 'payment',
+    loadChildren: () =>
+      import('./payment/payment.module').then((m) => m.PaymentPageModule),
+  },
+  {
+    path: 'new-contact',
+    loadChildren: () =>
+      import('./contact-form/contact-form.module').then(
+        (m) => m.ContactFormPageModule
+      ),
+  },
 ];
 
 @NgModule({

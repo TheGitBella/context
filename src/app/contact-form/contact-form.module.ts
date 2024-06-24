@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { PaymentPage } from './payment.page';
+import { ContactFormPage } from './contact-form.page';
 
-import { PaymentPageRoutingModule } from './payment-routing.module';
+import { ContactFormPageRoutingModule } from './contact-form-routing.module';
 import { HeaderPageModule } from '../component/header/header.module';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -13,10 +13,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     CommonModule,
     FormsModule,
     IonicModule,
-    PaymentPageRoutingModule,
+    ContactFormPageRoutingModule,
     HeaderPageModule,
     NgApexchartsModule,
   ],
-  declarations: [PaymentPage],
+  declarations: [ContactFormPage],
 })
-export class PaymentPageModule {}
+export class ContactFormPageModule {}

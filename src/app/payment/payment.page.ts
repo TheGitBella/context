@@ -5,7 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: 'payment.page.html',
   styleUrls: ['payment.page.scss'],
 })
-export class PaymentPage {
-    constructor () {}
-
-}
+export class PaymentPage {}

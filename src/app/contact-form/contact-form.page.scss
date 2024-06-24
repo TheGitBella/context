@@ -68,6 +68,11 @@ ion-content {
       ion-button {
         margin-top: 25px;
       }
+
+      ion-checkbox {
+        color: #173b5d;
+        --checkbox-background: #efefef;
+      }
     }
   }
 }

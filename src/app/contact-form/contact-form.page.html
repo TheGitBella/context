@@ -10,26 +10,24 @@
   <div class="wrapper">
     <ion-card class="form-wrapper">
       <ion-card-content>
-        <h2>PAGAMENTO</h2>
-        <ion-item>
+        <h2>NOVO CONTATO</h2>
+        <ion-item class="input">
           <ion-icon name="person"></ion-icon>
           <ion-input type="text" placeholder="Nome"></ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-icon name="card-outline"></ion-icon>
-          <ion-input type="number" placeholder="Nº Cartão"></ion-input>
+        <ion-item class="input">
+          <ion-icon name="mail"></ion-icon>
+          <ion-input type="text" placeholder="E-mail"></ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-icon name="calendar-outline"></ion-icon>
-          <ion-input type="date" placeholder="Validade"></ion-input>
+        <ion-item class="input">
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-input type="tell" placeholder="Telefone"></ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-icon name="lock-closed"></ion-icon>
-          <ion-input type="number" placeholder="CVV"></ion-input>
-        </ion-item>
+        <ion-checkbox>Profissional de Saúde</ion-checkbox>
+        <ion-checkbox checked="true">Contato de Emergência</ion-checkbox>
 
         <ion-button expand="block">Salvar</ion-button>
       </ion-card-content>
