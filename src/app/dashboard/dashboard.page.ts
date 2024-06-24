@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['dashboard.page.scss'],
 })
 export class DashboardPage {
-    siteTitle: string = 'dfdsfddsf';
-    siteContent: string = 'dsfdfsddsfdsf';
+    siteTitle: string = 'COMO OS EXERCÍCIOS FÍSICOS AJUDAM NA SAÚDE MENTAL?';
+    siteContent: string = 'Não é segredo para ninguém que a prática regular de exercícios físicos traz uma série de benefícios para o organismo. O háb...';
 
   constructor () {}
 
