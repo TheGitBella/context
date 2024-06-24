@@ -2,21 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { ProfilePage } from './profile.page';
+import { GadgetPage } from './gadget.page';
 
-import { ProfilePageRoutingModule } from './profile-routing.module';
+import { GadgetPageRoutingModule } from './gadget-routing.module';
 import { HeaderPageModule } from '../component/header/header.module';
-import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule,
+    GadgetPageRoutingModule,
     HeaderPageModule,
-    NgApexchartsModule,
   ],
-  declarations: [ProfilePage],
+  declarations: [GadgetPage],
 })
-export class ProfilePageModule {}
+export class GadgetPageModule {}

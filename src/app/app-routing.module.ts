@@ -58,6 +58,21 @@ const routes: Routes = [
         (m) => m.ContactFormPageModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact.module').then((m) => m.ContactPageModule),
+  },
+  {
+    path: 'gadget',
+    loadChildren: () =>
+      import('./gadget/gadget.module').then((m) => m.GadgetPageModule),
+  },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('./profile/profile.module').then((m) => m.ProfilePageModule),
+  },
 ];
 
 @NgModule({

@@ -2,21 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { ProfilePage } from './profile.page';
+import { ContactPage } from './contact.page';
 
-import { ProfilePageRoutingModule } from './profile-routing.module';
+import { ContactPageRoutingModule } from './contact-routing.module';
 import { HeaderPageModule } from '../component/header/header.module';
-import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule,
+    ContactPageRoutingModule,
     HeaderPageModule,
-    NgApexchartsModule,
   ],
-  declarations: [ProfilePage],
+  declarations: [ContactPage],
 })
-export class ProfilePageModule {}
+export class ContactPageModule {}
