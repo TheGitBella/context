@@ -53,3 +53,41 @@ ion-content {
     }
   }
 }
+
+#btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .btn {
+    background: #ffffff;
+    border-radius: 20px;
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 15px #173b5d;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 16px;
+
+    img {
+      width: 50px;
+    }
+
+    p {
+      color: #173b5d;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+
+}
+
+#button {
+  padding: 0px 16px;
+}
